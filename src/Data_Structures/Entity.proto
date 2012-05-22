@@ -1,0 +1,7 @@
+package EnronProject;
+
+message Entity {
+  required string name = 1;
+  required string folder = 2;
+  repeated string email = 3;
+}

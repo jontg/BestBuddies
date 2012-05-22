@@ -1,6 +1,7 @@
 # Compiled Object files
 *.slo
 *.lo
+*.obj
 *.o
 
 # Compiled Dynamic libraries
@@ -10,3 +11,7 @@
 *.lai
 *.la
 *.a
+
+# Project-specific files
+bin
+maildir

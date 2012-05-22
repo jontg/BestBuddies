@@ -1,0 +1,11 @@
+package EnronProject;
+
+message Email {
+  required string sender = 1;
+  repeated string receiver = 2;
+  repeated string header_tag = 3;
+  required string header = 4;
+  required string body = 5;
+
+  required string folder_metadata = 6;
+}
