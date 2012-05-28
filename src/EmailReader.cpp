@@ -7,7 +7,7 @@
 
 void EmailReader::Run()
 {
-  static const RE2 start_email_regex("___JONTG_START_TOKEN___ ([a-zA-Z0-9\\._\\/]*)\\s?");
+  static const RE2 start_email_regex("___JONTG_START_TOKEN___ ([a-zA-Z0-9\\._\\/\\-]*)\\s?");
   static const RE2 end_email_regex("___JONTG_EOF_TOKEN___\\s?");
   static const RE2 sender_regex("From: (.*)\\r\\s?");
   static const RE2 receiver_regex("To: (.*)\\r\\s?");
