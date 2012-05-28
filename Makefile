@@ -1,4 +1,4 @@
-OBJS = build/Graph.o build/EmailReader.o build/EntityGenerator.o
+OBJS = build/Graph.o build/EmailReader.o build/EntityGenerator.o build/DiskFile.o
 DATA = build/Data_Structures/Email.obj build/Data_Structures/Entity.obj
 DATA_HEADERS = src/Data_Structures/Email.pb.h
 CXX = g++
