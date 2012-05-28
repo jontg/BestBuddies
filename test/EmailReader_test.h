@@ -18,7 +18,7 @@ class EmailReaderEndToEndReceiver {
 TEST(EmailReader,EndToEndTest) {
     MockFile * mock_file = new MockFile();
     mock_file->AssignOpenResponse(true);
-    mock_file->AssignReadLineResponse(true, "___JONTG_START_TOKEN___ ./_sent_mail/SUMMARY.txt");
+    mock_file->AssignReadLineResponse(true, "___JONTG_START_TOKEN___ ruscitti-k/_sent_mail/SUMMARY.txt");
     mock_file->AssignReadLineResponse(true, "Message-ID: <20851539.1075852837765.JavaMail.evans@thyme>\r");
     mock_file->AssignReadLineResponse(true, "Date: Tue, 25 Sep 2001 15:04:00 -0700 (PDT)\r");
     mock_file->AssignReadLineResponse(true, "From: 40enron@enron.com\r");
