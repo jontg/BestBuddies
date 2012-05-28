@@ -12,13 +12,17 @@ using namespace EnronProject;
 class EntityGenerator {
   typedef boost::signals2::signal<void (Entity *)> signal_t;
 
+  map<string, map<string, int> > sender_address_count;
+
   public:
-    EntityGenerator();
+    EntityGenerator() {}
 
     boost::signals2::connection AttachSubscriber(signal_t::slot_type subscriber)
     { return processed_signal.connect(subscriber); }
 
     void ReceiveEmail(Email * email);
+
+    void AnnounceResults();
 
   private:
     signal_t processed_signal;
